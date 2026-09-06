@@ -6,7 +6,7 @@ namespace Assign5
 {
     internal enum Genre
     {
-        Fiction,
+        Fiction = 1,
         NonFiction,
         Science
        
