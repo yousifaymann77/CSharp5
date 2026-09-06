@@ -49,6 +49,11 @@ namespace Assign5
             }
             #endregion
 
-            }
+            #region Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+            Genre genre1 = Genre.Fiction;
+            string s = genre1.ToString();
+            Console.WriteLine($"Genre: {s}"); 
+            #endregion
+        }
     }
 }
