@@ -1,4 +1,6 @@
-﻿namespace Assign5
+﻿using System.Drawing;
+
+namespace Assign5
 {
     internal class Program
     {
@@ -18,7 +20,12 @@
             #region Add a public string Title; field to Book. Set it and print it from Main.
             Book book = new Book();
             book.Title = "Database Systems";
-            Console.WriteLine(book.Title); 
+            Console.WriteLine(book.Title);
+            #endregion
+
+            #region Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,assign it Genre.Science, and print it.
+            book.Genre = Genre.Science;
+            Console.WriteLine(book.Genre); 
             #endregion
 
         }

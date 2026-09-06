@@ -9,5 +9,7 @@ namespace Assign5
         private string password = "secret";
         internal int copiesInStock = 5;
         public string Title { get; set; }
+        public Genre Genre { get; set; }
+
     }
 }
