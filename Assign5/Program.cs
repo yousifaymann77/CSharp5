@@ -12,7 +12,13 @@
 
             #region Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile?Why?
             // it will compile because the copiesInStock field is internal and can be accessed from within the same class.
-            Console.WriteLine(b.copiesInStock); 
+            Console.WriteLine(b.copiesInStock);
+            #endregion
+
+            #region Add a public string Title; field to Book. Set it and print it from Main.
+            Book book = new Book();
+            book.Title = "Database Systems";
+            Console.WriteLine(book.Title); 
             #endregion
 
         }
