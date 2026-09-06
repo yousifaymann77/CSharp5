@@ -32,8 +32,23 @@ namespace Assign5
             int x = (int)Genre.Fiction;
             int y = (int)Genre.NonFiction;
             int z = (int)Genre.Science;
-            Console.WriteLine($"Fiction: {x}, NonFiction: {y}, Science: {z}"); 
+            Console.WriteLine($"Fiction: {x}, NonFiction: {y}, Science: {z}");
             #endregion
-        }
+
+            #region Given int genreNumber = 1;, cast it into a Genre value and print the result.
+            int genreNumber = 1;
+
+            Genre genre;
+            if (Enum.IsDefined(typeof(Genre), genreNumber)){
+                genre = (Genre)genreNumber;
+                Console.WriteLine($"Genre: {genre}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid genre number.");
+            }
+            #endregion
+
+            }
     }
 }
